@@ -21,3 +21,6 @@ https://gist.github.com/maxogden/3501352c2f01be4ed03479a75bca1a18
 Particularly this:
 
 ffmpeg -f lavfi -i anullsrc -rtsp_transport tcp -i rtsp://<source> -tune zerolatency -vcodec copy -b 12000000 -pix_fmt + -c:v copy -c:a aac -strict experimental -f flv rtmp://a.rtmp.youtube.com/live2/<key>
+
+TEST URL http://192.168.0.241:88/cgi-bin/CGIProxy.fcgi?cmd=snapPicture&usr=nadmin&pwd=74xM3LafP3Lw&count=0
+http://manpages.org/ffmpeg#options
