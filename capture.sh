@@ -14,8 +14,8 @@ start=$(date +%s)
 end=$(date +%s)
 
 outdir=$(date  +%Y%m%d)
-mkdir -p $outdir
-cd $outdir
+mkdir -p ~/foscam_capture/$outdir
+cd ~/foscam_capture/$outdir
 doexit=0
 trap ctrl_c INT
 function ctrl_c() {
