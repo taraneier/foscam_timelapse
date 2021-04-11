@@ -28,7 +28,7 @@ function ctrl_c() {
 }
 
 
-while [ $(( $end - $start )) -lt $((10 * 60 * 60)) ]; do
+while [ $(( $end - $start )) -lt $(( 10 * 60 * 60 )) ]; do
     ffmpeg -loglevel quiet -y -rtsp_transport tcp -i "rtsp://${user}:${pwd}@${cameraip}/videoMain" -vsync 2 -frames:v 1 -strftime 1 "%Y-%m-%d_%H-%M-%S.jpg"
     end=$(date +%s)
 done
